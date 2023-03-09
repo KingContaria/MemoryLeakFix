@@ -26,7 +26,9 @@ jobs:
       - name: Grant execute permission to gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew build
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: clean build --stacktrace
       - uses: actions/upload-artifact@v2
         with:
           name: Compiled artifacts for ${{ github.sha }}
