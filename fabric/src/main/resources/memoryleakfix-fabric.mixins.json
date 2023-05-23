@@ -6,11 +6,7 @@
   "client": [
     "customPayloadLeak.ClientboundCustomPayloadPacket_bufferMixin",
     "customPayloadLeak.FriendlyByteBufAccessor",
-    "customPayloadLeak.Minecraft_freeBufferMixin",
-    "spongePoweredLeak.Minecraft_clientLoadedMixin"
-  ],
-  "server": [
-    "spongePoweredLeak.MinecraftServer_serverLoadedMixin"
+    "customPayloadLeak.Minecraft_freeBufferMixin"
   ],
   "injectors": {
     "defaultRequire": 1
